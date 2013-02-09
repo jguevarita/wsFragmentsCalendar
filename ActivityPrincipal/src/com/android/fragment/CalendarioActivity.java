@@ -312,10 +312,24 @@ public class CalendarioActivity extends Fragment implements OnClickListener {
 		
 		@Override
 		public void onClick(View view) {
-			//Esta fecha la deseo enviar al fragment d ListaEventos
+			
 			System.out.println("Entramos a dar click a una fecha");
 			String fechaEscogida = (String) view.getTag();
 			System.out.println("FechaEscogida "+fechaEscogida);
+			
+			Intent i = new Intent(view.getContext(), ActivityPrincipal.class);
+			System.out.println("PASO !!!!!!!");
+			//Creamos la información a pasar entre actividades
+        	Bundle b = new Bundle(); 
+        	System.out.println("sigue PASando");
+        	b.putString("fecha", fechaEscogida);
+        	System.out.println("seguimos");
+        	//Añadimos la información al intent
+        	i.putExtras(b);
+        	System.out.println("Seguiremoss¿");
+        	//Iniciamos la nueva actividad
+        	
+            startActivity(i);
 			
 		}
 
