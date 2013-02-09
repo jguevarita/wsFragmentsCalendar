@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+D:\UNIQUE\wsFragmentsCalendar\.metadata\.plugins\org.eclipse.jdt.core
+2078433874.index
+4038163858.index
+605790958.index

@@ -1,0 +1,43 @@
+package com.android.fragment;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class ListaEventos extends Fragment {
+
+	Bundle bundle;
+	Button btnFecha;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		System.out.println("JAJAJAJA");
+		View view = inflater.inflate(R.layout.lista, container, false);
+		System.out.println("JEJEJEJE");
+		btnFecha = (Button) view.findViewById(R.id.button4);
+		System.out.println("JUJUJUJU");
+//		if (getActivity().getIntent().getExtras() != null) {
+//			// Recuperamos la información pasada en el intent
+//			System.out.println("JIJIJI");
+//			bundle = getActivity().getIntent().getExtras();
+//			System.out.println("JOJOJOJOJO");
+//			if (bundle.getString("fecha") != null
+//					&& !bundle.getString("fecha").equals("")) {
+//				// Localizar los controles
+//				// Construimos el mensaje a mostrar
+//				System.out.println("PAPAPAPAPAP");
+//				btnFecha.setText("LA FECHA: " + bundle.getString("fecha"));
+//			}
+//		}
+		
+	
+		return view;
+
+	}
+
+}
